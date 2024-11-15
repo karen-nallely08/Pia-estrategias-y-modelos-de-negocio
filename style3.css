@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.hader {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    min-height: 700px;
+}
+
+.hader {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    min-height: 700px;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.Microcreditos {
+    font-weight: 800;
+    font-size: 25px;
+    color: #FC697A;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px;
+    color: #656875;
+    display: block;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li a {
+    color: #12114D;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.general {
+    padding: 70px 0;
+    display: flex;
+}
+
+.general-1 {
+    width: 40%;
+    display: flex;
+}
+
+.general-card {
+    padding: 20px 90px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+section {
+    display: flex;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 18px;
+    color: #12114D;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+
+    background-color: #e2e2e2;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: #f0EFEF;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .general {
+        padding: 70px;
+        flex-direction: column;
+    }
+
+    .general-1 {
+        width: 100%;
+        flex-direction: column;
+        order: 2;
+    }
+    .general-card {
+        margin: 0 0 25px 0;
+
+    }
+}

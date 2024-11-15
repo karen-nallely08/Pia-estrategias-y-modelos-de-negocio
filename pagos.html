@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagos y Créditos</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Título de la página -->
+        <header>
+            <h1>Microcreditos</h1>
+        </header>
+
+        <!-- Sección de Adeudo Actual -->
+        <section class="balance">
+            <h2>Saldo Pendiente</h2>
+            <p>Tu saldo pendiente es de <strong>$3,000 pesos</strong></p>
+        </section>
+
+        <!-- Sección de Realizar Pago -->
+        <section class="payment">
+            <h2>Realizar Pago</h2>
+            <form action="#" method="POST">
+                <label for="payment-amount">Monto a pagar:</label>
+                <input type="number" id="payment-amount" name="amount" placeholder="Monto" required>
+
+                <label for="payment-method">Método de pago:</label>
+                <select id="payment-method" name="method" required>
+                    <option value="credit-card">Tarjeta de crédito</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Transferencia bancaria</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Pagar</button>
+            </form>
+        </section>
+
+        <!-- Sección de Nuevo Crédito -->
+        <section class="new-credit">
+            <h2>Solicitar Nuevo Crédito</h2>
+            <form action="#" method="POST">
+                <label for="credit-amount">Monto del Crédito:</label>
+                <input type="number" id="credit-amount" name="credit_amount" placeholder="Monto deseado" required>
+
+                <label for="credit-term">Plazo de Crédito (meses):</label>
+                <input type="number" id="credit-term" name="credit_term" placeholder="Plazo en meses" required>
+
+                <label for="credit-income">Ingresos Mensuales:</label>
+                <input type="number" id="credit-income" name="credit_income" placeholder="Ingresos mensuales" required>
+
+                <button type="submit" class="submit-btn">Solicitar Crédito</button>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
